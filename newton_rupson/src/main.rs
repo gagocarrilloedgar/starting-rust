@@ -6,7 +6,7 @@ fn main() {
     m_anom = (m_anom/180.0)* 3.14;
     let delta = 0.00001;
     let max = 20;
-
+    
     let e_anom:f32 = newton_rapson(delta, m_anom, e, max);
 
     println!("The converged E for e:{} and M:{} is E:{}",e,m_anom,e_anom);
@@ -40,3 +40,4 @@ fn newton_rapson(delta: f32, m_anom: f32,e:f32, max:u32)->f32{
 
     e_anom
 }
+
